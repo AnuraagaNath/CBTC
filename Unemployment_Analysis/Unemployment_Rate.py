@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
-df = pd.read_parquet('Unemployment_Analysis/unemployment_rate.parquet')
+df = pd.read_parquet('Unemployment_Analysis/data/unemployment_rate.parquet')
 
 st.title('Unemployment Rate Analysis (Covid 2019-2020) ')
 
@@ -23,7 +23,7 @@ st.plotly_chart(fig)
 
 
 # urban regionwise 
-df = pd.read_parquet('Unemployment_Analysis/unemployment_rate.parquet')
+df = pd.read_parquet('Unemployment_Analysis/data/unemployment_rate.parquet')
 st.write('---')
 st.markdown('## Urban Region Wise Assessment')
 
