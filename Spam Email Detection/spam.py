@@ -2,7 +2,7 @@ import streamlit as st
 from tensorflow import keras
 import pandas as pd
 
-model = keras.models.load_model('model.keras')
+model = keras.models.load_model('Spam Email Detection/model.keras')
 
 data = pd.read_csv('Spam Email Detection/Spam Email Detection - spam.csv', usecols=['v2'])
 st.title('Spam message Detector 📬')
